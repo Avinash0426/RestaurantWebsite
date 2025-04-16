@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playwrite+HR+Lijeva+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-weight: 300;
+    line-height:1.4;
+    font-family: "Roboto" , sans-serif;
+}
+
+.container{
+    height: 100%;
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+button{
+    transition:0.2s ease-in-out;
+    border: none;
+    padding: 10px 15px;
+}
+
+button:hover{
+   opacity: 0.8;
+   transition:0.2s ease-in-out;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+    background-color: white;
+    
+}
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+}
+.sibeBar{
+    font-size: 28px;
+}
+.mainPage{
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+}
+.offerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 1rem;
+}
+.offerDetails{
+    background-color: rgb(28, 148, 28);
+    align-self: flex-start;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.offerContent h1{
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 7rem;
+}
+.offerMatter{
+    font-weight: 600;
+}
+.main_button{
+    background-color: #ffc066;
+    align-self: flex-start;
+    color: white;
+    font-size: 25px;
+}
+
+.options{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    width: 80%;
+    margin: 60px auto;
+}
+
+.options section{
+    display: flex;
+    column-gap: 10px;
+}
+
+.options section:hover{
+   transition: 0.2s ease-in-out;
+   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+}
+
+.option_img img{
+    height: 70px;
+    width: 70px;
+}
+
+.menuBar{
+    border-top: 1px solid grey;
+    padding-top: 50px;
+}
+.menuButton{
+    background-color:  rgb(28, 148, 28);
+    padding: 2px 5px;
+    color: white;
+    font-size: 25px;
+}
+
+.menuContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    margin-bottom: 50px;
+}
+
+.gridContainer{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+    
+}
+
+
+.img1{
+    grid-area: I1;
+}
+
+.img2{
+    grid-area: I2
+}
+
+.img3{
+    grid-area: I3
+
+}
+
+.img4{
+    grid-area: I4
+}
+
+.img5{
+    grid-area: I5
+}
+
+.img6{
+    grid-area: I6
+}
+
+.img7{
+    grid-area: I7
+}
+
+.gridImage{
+    border-radius:10px;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gridImage:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.footerSection{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    background-color:#ffc066;
+    font-size: 21px;
+    padding: 50px 50px  120px 50px;
+    column-gap: 100px;
+}
+
+.footerSection h3{
+    margin-bottom: 20px;
+}
+
+.footerSection ul{
+    list-style: none;
+}
+
+.footerSection ul li{
+    padding: 2px;
+}
+
+.fa-brands{
+    margin-right: 10px;
+}
+
+#emailTag{
+    border: none;
+    width: auto;
+    height: 30px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+
+
+
+@media screen and (max-width:995px){
+    .mainPage{
+        flex-direction: column;
+        row-gap: 3rem;
+        align-items: center;
+    }
+
+    .mainLogo{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mainLogo img{
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .offerContent{
+        flex-direction: column;  
+        padding-left: 20px;
+        align-items: center; 
+    }
+
+    .offerContent h1{
+        font-size: 50px;
+        line-height: 60px;
+        align-self: flex-start;
+    }
+
+    .options{
+        margin: 50px 0px;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-start;
+    }
+
+    .footer{
+        background-color: #ffc066;
+    }
+
+    .footerSection{
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: flex-start; */
+        row-gap: 20px;
+        padding-left: 20px;
+        width: 100vw;
+        
+    }
+
+    .footerSection .footerImg{
+        align-self: center;
+    }
+
+    #emailTag{
+        width: auto;
+    }
+}
+
